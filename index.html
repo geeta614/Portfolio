@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -15,8 +15,8 @@
         <div>
             <ul class="nav-links">
               <li><a href="#project">Projects</a></li>
-              <li><a href="#experience">Experiences</a></li>
-              <li><a href="#tech-stack">Technical Skills</a></li>
+              <li><a href="#tech-stack">Skills</a></li>
+              <li><a href="#experience">Publications</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,8 +32,8 @@
             </div>
             <div class="menu-links">
               <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-              <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
-              <li><a href="#tech-stack" onclick="toggleMenu()">Technical Skills</a></li>
+              <li><a href="#tech-stack" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Publications</a></li>
               <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -49,7 +49,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Geeta Garg</h1>
-            <p class="section__text__p2">Backend-Focused Software Developer</p>
+            <p class="section__text__p2">Software Developer Engineer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
                     Download Resume
@@ -81,6 +81,7 @@
         </div>
     </section>
 
+
     <section id="about">
         <p class="section__text__p1">Get to Know More About Me</p>
         <h1 class="title">Education</h1>
@@ -94,8 +95,8 @@
                             class="icon"
                         >
                         <h3>Indira Gandhi Delhi Technical University for Women, Delhi</h3>
-                        <p>B.Tech. in CSE-AI
-                            <br>CGPA-8.57
+                        <p>BTech CSE-AI
+                            <br>CGPA-8.69
                             <br>2022-2026
                         </p>
                     </div>
@@ -106,7 +107,7 @@
                             class="icon"
                         >
                         <h3> Government co-ed Senior Secondary School, Delhi</h3>
-                        <p> CBSE- XII (PCM)
+                        <p> CBSE-XII (PCM)
                             <br>Percentage-85.2%
                             <br>2020-2021
                         </p>
@@ -118,65 +119,16 @@
                             class="icon"
                         >
                         <h3> Government co-ed Senior Secondary School, Delhi</h3>
-                        <p> CBSE- X
+                        <p> CBSE-X
                             <br>Percentage-93.2%
                             <br>2018-2019
                         </p>
                     </div>
                 </div>
                 <div class="text-container">
-                  <p>
-                    Computer Science student focused on backend development and scalable systems. Currently strengthening DSA and building backend-heavy projects using Java and SQL.
+                  <p class="section__text__p1">
+                    Computer Science student focused on software development and scalable systems. Currently strengthening DSA and building real-life projects.
                   </p>
-                </div>
-            </div>
-        </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-        >
-    </section>
-
-    <section id="experience">
-        <h1 class="title">Experiences</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience Icon"
-                            class="icon"
-                        >
-                        <h3>Research Intern, NeuroScribe, May 2025 - July 2025</h3>
-                        <p>
-                           • Detected PCOS on a clinical CSV dataset using AI-assisted implementation.
-                            <br>
-                           • Applied feature selection, evaluated and compared ML models, with Random Forest performing best.
-                           <br>
-                           • <a href="https://github.com/geeta614/PCOS_Detection_CSV" target="_blank">GitHub</a>
-                        </p>
-                    </div>
-
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience Icon"
-                            class="icon"
-                        >
-                        <h3>Research Intern, IGDTUW, May 2023 - July 2023</h3>
-                        <p>
-                           • Used transfer learning techniques on fundus images for glaucoma detection.
-                           <br>
-                           • Assisted in literature survey and co-authored a paper published by Springer Nature at ICDPN 2024.
-                           <br>
-                           • <a href="https://github.com/geeta614/Glaucoma-Detection" target="_blank">GitHub</a>
-                           <br>
-                           • <a href="https://link.springer.com/chapter/10.1007/978-981-96-3102-5_45" target="_blank">Research Paper</a>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -187,6 +139,7 @@
             onclick="location.href='./#project'"
         >
     </section>
+
 
     <section id="project">
         <h1 class="title">Projects</h1>
@@ -200,16 +153,13 @@
                             alt="Project Icon"
                             class="icon"
                         >
-                        <h3>Resume Builder, May 2025</h3>
-                        <p>
-                           • Built a responsive resume builder web app with real-time preview and error-free PDF export.
-                            <br>
-                           • Tech Stack: HTML, CSS, JavaScript, html2pdf.js
-                           <br>
-                           • <a href="https://github.com/geeta614/resume-builder" target="_blank">GitHub</a>
-                           <br>
-                           • <a href="https://form2resume.netlify.app/" target="_blank">Live</a>
-                        </p>
+                        <h3>Resume Metrics, June 2024</h3>
+                        <ul>
+                          <ul>Built an ATS-focused resume builder with dynamic section rendering, real-time preview, and one-click PDF export.</ul>
+                          <ul>Implemented keyword-based job description analysis and client-side validation using modular JavaScript architecture.</ul>
+                          <ul>Tech Stack: HTML, CSS, JavaScript, LocalStorage, html2pdf.js</ul>
+                          <ul><a href="https://github.com/geeta614/Resume_Metrics" target="_blank">Code</a> | <a href="https://resumemetrics.netlify.app/" target="_blank">Live</a> </ul>
+                        </ul>
                     </div>
                     
                     <div class="details-container">
@@ -218,54 +168,13 @@
                             alt="Project Icon"
                             class="icon"
                         >
-                        <h3>Portfolio Website, January 2025</h3>
-                        <p> 
-                           • Designed and deployed a personal portfolio showcasing projects and skills with a responsive UI.
-                           <br>
-                           • Tech Stack: HTML, CSS, JavaScript
-                           <br>
-                           • <a href="https://github.com/geeta614/portfolio" target="_blank">GitHub</a>
-                           <br>
-                           • <a href="https://geeta-garg-portfolio.netlify.app/" target="_blank">Live</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#positions'"
-        >
-    </section>
-
-    <section id="positions">
-        <h1 class="title">Positions of Responsibility</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png" 
-                            alt="Experience Icon"
-                            class="icon"
-                        >
-                        <h3> Management Relations Head, TNP IGDTUW, August 2023- Present</h3>
-                        <p>
-                          Maintained placement records and streamlined company communication by managing student data and deadlines.
-                        </p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png" 
-                            alt="Experience Icon"
-                            class="icon"
-                        >
-                        <h3> Team Lead, Resource Management, IGDTUW Resources, August 2023- July 2024</h3>
-                        <p>
-                          Led academic resource curation and engagement initiatives for a student community of 500+.
-                        </p>
+                        <h3>Portfolio, April 2023</h3>
+                        <ul>
+                          <ul>Designed and developed a responsive personal portfolio to showcase projects, technical skills, and achievements.</ul>
+                          <ul>Optimized layout using structured CSS and media queries to ensure cross-device compatibility.</ul>
+                          <ul>Tech Stack: HTML, CSS, JavaScript, Netlify</ul>
+                          <ul><a href="https://github.com/geeta614/portfolio" target="_blank">Code</a> | <a href="https://geeta-garg-portfolio.netlify.app/" target="_blank">Live</a> </ul>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -278,13 +187,17 @@
         >
     </section>
 
+    
+    
+
     <section id="tech-stack">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Technical Skills</h1>
+        <h1 class="title">Skills</h1>
         <div class="experience-details-container">
           <div class="about-containers">
+
             <div class="details-container">
-              <h2 class="experience-sub-title">Languages</h2>
+              <h2 class="experience-sub-title">Programming Languages</h2>
               <div class="article-container">
                 
                 <article>
@@ -305,29 +218,18 @@
                     class="icon"
                   />
                   <div>
+                    <h3>Java</h3>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
                     <h3>SQL</h3>
-                  </div>
-                </article>
-
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                  </div>
-                </article>
-
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
                   </div>
                 </article>
 
@@ -344,6 +246,60 @@
 
               </div>
             </div>
+
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Developer Tools</h2>
+                <div class="article-container">
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>VS Code</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>GitHub</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Colab</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>IntelliJ</h3>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+
             <div class="details-container">
                 <h2 class="experience-sub-title">Course Work</h2>
                 <div class="article-container">
@@ -391,44 +347,43 @@
                       <h3>OS</h3>
                     </div>
                   </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CN</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>ML</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>DL</h3>
+                    </div>
+                  </article>
                   
                 </div>
               </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Developer Tools</h2>
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>VS Code</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>GitHub</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Google Colab</h3>
-                    </div>
-                  </article>
-                </div>
-              </div>
+
 
               <div class="details-container">
               <h2 class="experience-sub-title">Backend (Learning)</h2>
@@ -477,6 +432,7 @@
                     <h3>MySQL</h3>
                   </div>
                 </article>
+
               </div>
             </div>
             
@@ -486,25 +442,122 @@
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#achievements'"
+          onclick="location.href='./#experience'"
         />
       </section>
 
+
+
+    <section id="experience">
+        <h1 class="title">Publications</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+
+
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Federated Learning with CNNs and ResNet50 to Detect Polycystic Ovarian Disease</h3>
+                        
+                        <ul>Built a privacy-preserving PCOS image classification system using CNNs and ResNet50 (99.22% accuracy) with FedAvg-based federated learning.</ul>
+                        <ul>Paper accepted at DOSCI 2026.</ul>
+                        <ul><a href="https://github.com/geeta614/Minor_PCOS_Detection_Image" target="_blank">Code</a></ul>
+                    </div>
+
+
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Prediction of Polycystic Ovarian Syndrome using Explainable Machine Learning Techniques</h3>
+                        
+                        <ul>Developed ML models for PCOS detection where Random Forest achieved 95.89% accuracy with feature selection and SHAP-based interpretability.</ul>
+                        <ul>Paper accepted at COMSIA 2026.</ul>
+                        <ul><a href="https://github.com/geeta614/Internship_PCOS_Detection_CSV" target="_blank">Code</a></ul>
+                    </div>
+
+
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Detection of Glaucoma Disease Using Deep Learning Methods</h3>
+
+                        <ul>Applied transfer learning (AlexNet, VGG16, ResNet50, GoogLeNet) for glaucoma detection achieving 89.28% accuracy.</ul>
+                        <ul>Paper published by ICDPN 2024.</ul>
+                        <ul><a href="https://github.com/geeta614/Glaucoma-Detection" target="_blank">Code</a> | <a href="https://link.springer.com/chapter/10.1007/978-981-96-3102-5_45" target="_blank">Paper</a></ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#positions'"
+        >
+    </section>
+
+
+
+    <section id="positions">
+        <h1 class="title">Positions of Responsibility</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Management Relations Head in TNP IGDTUW</h3>
+                        <ul>Maintaining placement records and company communication by managing student data and deadlines.</ul>
+                    </div>
+
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Team Lead, Resource Management in IGDTUW Resources</h3>
+                        <ul>Led academic resource curation and engagement initiatives for a student community of 500+.</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#achievements'"
+        >
+    </section>
+
+    
       <section id="achievements">
         <h1 class="title">Achievements</h1>
         <div class="details-container">
-          <p>
-           • Earned 100-day streak badge on LeetCode.
-           <br>
-           • Leading a 700+ member Telegram community 
-           for sharing semester and technical resources.
-           <br>
-           • Selected for PwC Technology & Transformation 
-           Launchpad Program 3.0.
-           <br>
-           • Scored 100% in CBSE Class X Mathematics.
-           </p>
+          <ul>
+            <ul>Earned 100-day streak badge on LeetCode.</ul>
+            <ul>Leading a 900+ member Telegram community for sharing semester and technical resources.</ul>
+            <ul>Selected for PwC Technology & Transformation Launchpad Program 3.0.</ul>
+            <ul>Scored 100% in CBSE Class X Mathematics.</ul>
+          </ul>
         </div>
+
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
@@ -513,17 +566,17 @@
         />
       </section>
 
+
+
     <section id="certifications">
         <h1 class="title">Certifications</h1>
+
         <div class="details-container">
-          <p>
-           • Database Management System- Scaler
-           <br>
-           • Developing Soft Skills and Personality– NPTEL (Secured 80%)
-           <br>
-           • Data Structures and Algorithms– Coding Ninjas
-           </p>
+          <ul>Database Management System- Scaler</ul>
+          <ul>Developing Soft Skills and Personality– NPTEL</ul>
+          <ul>Data Structures and Algorithms– Coding Ninjas</ul>
         </div>
+
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
@@ -532,10 +585,14 @@
         />
       </section>
 
+
+
     <section id="contact">
         <p class="section__text__p1">Get in Touch With Me</p>
         <h1 class="title">Contact</h1>
         <div class="contact-info-upper-container">
+
+
           <div class="contact-info-container">
             <img
               src="./assets/email.png"
@@ -544,6 +601,8 @@
             />
             <p><a href="mailto:geeta048btcsai22@igdtuw.ac.in" target="_blank">@gmail.com</a></p>
           </div>
+
+
           <div class="contact-info-container">
             <img
               src="./assets/linkedin.png"
@@ -552,6 +611,8 @@
             />
             <p><a href="https://www.linkedin.com/in/geeta-garg614/" target="_blank">LinkedIn</a></p>
           </div>
+
+
         </div>
       </section>
 
@@ -560,12 +621,12 @@
           <div class="nav-links-container">
             <ul class="nav-links">
               <li><a href="#project">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#tech-stack">Technical Skills</a></li>
+              <li><a href="#tech-stack">Skills</a></li>
+              <li><a href="#experience">Publications</a></li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2025 Geeta Garg. All Rights Reserved.</p>
+        <p>Copyright &#169; Geeta Garg. All Rights Reserved.</p>
       </footer>
       <script src="script.js"></script>
     </body>
